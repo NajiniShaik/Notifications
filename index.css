@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+}
+
+.bg-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #0f172a;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Roboto";
+  text-align: center;
+}
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .cards-container {
+    width: 80%;
+    max-width: 640px;
+  }
+}
+
+.information-card {
+  background-color: #0b69ff;
+}
+
+.success-card {
+  background-color: #2dca73;
+}
+
+.warning-card {
+  background-color: #ffb800;
+}
+
+.error-card {
+  background-color: #ff0b37;
+}
+
+.card {
+  padding: 5px 20px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.img {
+  height: 25px;
+  width: 25px;
+  margin-right: 15px;
+}
+
+.msg {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Roboto";
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 10px 20px;
+  }
+  .img {
+    height: 34px;
+    width: 34px;
+  }
+
+  .msg {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 44px;
+  }
+}
